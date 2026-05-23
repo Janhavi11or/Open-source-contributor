@@ -1,0 +1,123 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f9fc; /* soft pastel background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #34495e; /* elegant navy */
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: slideDown 1s ease; /* header animation */
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+header nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #1abc9c; /* teal accent */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #eaf2f8, #f7f9fc); /* soft gradient */
+}
+
+.hero-content {
+  max-width: 700px;
+  animation: fadeIn 1.5s ease; /* fade-in effect */
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  animation: textGlow 3s ease-in-out infinite alternate; /* subtle glow */
+}
+
+.hero p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Buttons */
+.cta-buttons a {
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 0.9rem 1.6rem;
+  background: #1abc9c; /* teal button */
+  color: #fff;
+  border-radius: 30px; /* pill shape */
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeUp 1.5s ease;
+}
+
+.cta-buttons a:hover {
+  background: #16a085;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #34495e;
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  animation: fadeIn 2s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes textGlow {
+  from { text-shadow: 0 0 5px #1abc9c; }
+  to { text-shadow: 0 0 15px #16a085; }
+}
